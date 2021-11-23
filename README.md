@@ -12,8 +12,12 @@ able to:
 
 ## Maven Goals
 
+Increment the version of `child-module-a` and make it a `SNAPSHOT`
+
 ```shell
-mvn versions:set -DnextSnapshot=true -DartifactId='*'
+mvn versions:set -DnextSnapshot=true -DartifactId=child-moodule-a
 ```
+
+So if `child-module-a` is currently `1.0`, running the command will update it to `1.1-SNAPSHOT`.
 
 If you're happy with the changes, run `mvn versions:commit`, otherwise run `mvn versions:revert`.
