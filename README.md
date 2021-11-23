@@ -12,10 +12,8 @@ able to:
 
 ## Maven Goals
 
-This sets the parent and children POM versions to the same specific version.
-
 ```shell
-mvn versions:set
+mvn versions:set -DnextSnapshot=true -DartifactId='*'
 ```
 
 If you're happy with the changes, run `mvn versions:commit`, otherwise run `mvn versions:revert`.
